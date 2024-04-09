@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "Nitin's web-screen recorder",
+    "description": "It records the user's screen.",
+    "icons": {
+        "128": "/images/rec.png"
+    },
+
+    "background": {
+        "service_worker": "background.js"
+    },
+
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": {
+            "16": "/images/rec.png",
+            "32": "/images/rec.png",
+            "128": "/images/rec.png"
+        }
+
+    },
+
+    "host_permissions": [
+        "http://*/",
+        "https://*/*"
+    ],
+
+    "permissions": [
+        "scripting",
+        "tabs",
+        "activeTab"
+    ],
+    "version": "1.0.0"
+}
